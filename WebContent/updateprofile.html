@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update profile</title>
+    <style>
+.body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color:rgb(236, 168, 145);
+}
+.form{
+   align-content: center;
+    border: black solid 5px;
+    border-radius: 35px;
+    height: 400px;
+    width: 500px;
+    background-color:turquoise;
+    transform: translate(370px,50px);
+    
+}
+.lab{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#oldname{
+    font-size: 20px;
+    height: 25px;
+    font-family: sans-serif;
+    font-weight: 15px;
+    text-align: center;
+    color: black;
+    border:white solid 2px;
+    border-radius: 15px;
+    transform: translate(15px);
+}
+.update{
+    height: 50px;
+    width: 140px;
+    background-color: tomato;
+    border: tomato solid 2px;
+    border-radius: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    back
+    font-weight: 10px;
+    transform: translate(170px,300px);
+    text-align: center
+    
+}
+.para{
+    position: -ms-page;
+            height: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: indigo;
+            font-size: 40px;
+            font-weight: 10px;
+            text-align: center;
+            transform: translate(0px,40px);
+}
+.goback{ 
+    height: 50px;
+    width: 140px;
+    background-color: rgb(19, 170, 180);
+    border: tomato solid 2px;
+    border-radius: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+   font-weight: 10px;
+    transform: translate(370px,300px);
+    text-align: center
+
+}
+
+    </style>
+</head>
+<body class="body">
+    <p class="para">Update profile</p>
+    <div class="form"> <form action="http://localhost:8000/Bankingapp/Updateprofile">
+        <table class="table" cellspacing="35px" border="0px">
+            <tr><td>
+                <label class="lab">Old Name</label>
+                <input id="oldname" type="text" placeholder="enter your old name" autofocus name="oldname">
+            </td></tr>
+            <tr><td>
+                    <label class="lab">password</label>
+                    <input id="oldname" type="password" placeholder="enter your password"name="passwor">
+                </td></tr>
+            <tr><td>
+                    <label class="lab">New Name</label>
+                    <input id="oldname" type="text" placeholder="enter your New name" name="newname">
+                </td></tr>
+                <input class="update" type="submit" value="UPDATE" >
+    </form></div>
+        </table>
+        <a href="Success.jsp" height="20px" width=" 50px" background-color=" cyan"><--go to home</a>
+        
+    
+</body>
+</html>

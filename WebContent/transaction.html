@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transaction</title>
+    <style>
+    .form{
+       margin-top:70px ;
+        margin-left: 400px;
+        font-size: 18px;
+       background-color: rgba(255, 206, 71, 0.644); 
+       position: center;
+       border:solid 21px rgb(79, 44, 126);
+       border-radius: 50px;
+       height: 350px;
+       width: 350px;
+       transform: translateX(80px);
+     
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .login{
+        
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        width:150px;
+height:40px;
+border:solid;
+font-size:25px;
+position: relative;
+border-radius:18px;
+align-content: right;
+transform: translateX(10px);
+
+
+
+    }
+    .reset{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        width:150px;
+height:40px;
+border:solid;
+font-size:25px;
+position: relative;
+border-radius:18px;
+align-content: right;
+transform: translateX(55px);
+
+
+
+
+    }
+    .acc{
+    size: 50px;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+    transform: translate(25px);
+    text-align: center;
+     
+    
+    }
+    .amt{
+    size: 50px;
+    height: 20px;
+    position: absolute;
+    transform: translate(85px);
+    align-items: center;
+    text-align: center;
+   
+}
+    .pass{
+        size:50px;
+        height: 20px;
+        position: center;
+        text-align: center;
+        
+    }
+    .table{
+       align-content: center;
+        }
+
+   .para{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+    align-content: center;
+     transform: translate(500px);
+    }   
+
+   
+
+    </style>
+</head>
+<body>
+    <p class="para" > Transfer your amount! </p>
+   <div class="form"> <form action="http://localhost:8000/Bankingapp/Transaction">
+        <table class="table"  cellspacing="25px" >
+        <tr> <td>
+                <label  class="lab">account number</label>
+                <input class="acc"    type="text" required autofocus placeholder="enter to account number" name="toacc">
+            </td></tr> 
+        <tr><td> 
+                <tr> <td>
+                        <label >amount </label>
+                        <input class="amt" required type="number"  placeholder="enter amount to be transferd"name="amt"></br>
+                    </td></tr> 
+                <tr><td> <br>
+                          
+            <label> confirm password</label>
+                <input class="pass" type="password" placeholder="password"name="pwd">
+            </br>
+            </td></tr> 
+
+    </table>
+    <input  class="login" type="submit" value="TRANSFER" >
+    <input class="reset"   type="reset"value="RESET"></form></div>
+    
+</body> 
+</html>

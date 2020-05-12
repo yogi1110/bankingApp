@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>log-in</title>
+    <style>
+    .form{
+        margin-top:70px ;
+        margin-left: 400px;
+        font-size: 18px;
+       background-color: rgba(255, 206, 71, 0.644); 
+       position: center;
+       border:solid 21px rgb(79, 44, 126);
+       border-radius: 50px;
+       height: 200px;
+       width: 350px;
+       transform: translateY(150px);
+	   
+     
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .login{
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        width:100px;
+height:40px;
+border:solid;
+border-weight:20px;
+
+font-size:15px;
+border-radius:18px;
+margin-top: 20px;
+transform: translateX(25px);
+
+
+    }
+    .reset{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width:100px;
+height:40px;
+border:solid;
+border-weight:20px;
+font-family:  Verdana, Geneva, Tahoma, sans-serif;
+font-size:15px;
+border-radius:18px;
+align-items: right;
+transform: translateX(100px);
+
+
+
+    }
+    .acc{
+    size: 50px;
+    height: 20px;
+    transform: translateX(5px);
+    text-align: center;
+    }
+    .pass{
+        size:50px;
+        height: 20px;    
+        text-align: center;
+        transform: translateX(22px);
+    }
+    .table{
+        align-self: center;
+        }
+.para{
+    font-family: cursive;
+    font-size:50px;
+ position: absolute;
+    transform: translateX(520px);
+    color: rgb(0, 0, 0);
+    
+    
+}.body{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+    </style>
+</head>
+<body class="body" style="background-color:gray;">
+    <p class="para"> login </p>
+  <div class="form"> <form action="http://localhost:8000/Bankingapp/Homeservlet">
+        <table class="table"  cellspacing="25px" >
+        <tr> <td>
+                <label >acc number </label>
+                <input class="acc" type="text" autofocus placeholder="account number" name="acc"></br>
+            </td></tr> 
+        <tr><td> 
+            <label>password</label>
+                <input class="pass" type="password" placeholder="password" name="pass">
+            </br>
+            </td></tr> 
+
+    </table><input class="login" type="submit" value="log-in">
+    <input class="reset"   type="reset"></form></div>
+    
+</body> 
+</html>
